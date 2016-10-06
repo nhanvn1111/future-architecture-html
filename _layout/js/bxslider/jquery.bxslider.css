@@ -1,0 +1,299 @@
+/* ==========================================================================
+   #RESET AND LAYOUT
+   ========================================================================== */
+
+	.bx-wrapper {
+		position: relative;
+		margin: 0;
+		z-index: 99;
+	}
+	
+	.bx-wrapper img {
+		display: block;
+		max-width: 100%;
+	}
+
+/* ==========================================================================
+   #THEME
+   ========================================================================== */
+
+	.bx-wrapper .bx-viewport {}
+	
+	.bx-wrapper .bx-pager,
+	.bx-wrapper .bx-controls-auto {
+		position: absolute;
+		bottom: 20px;
+		width: 100%;
+		z-index: 999;
+	}
+
+/* #LOADER
+   ========================================================================== */
+
+	.bx-wrapper .bx-loading {
+		position: absolute;
+		z-index: 2000;
+		top: 0;
+		left: 0;
+		width: 100%;
+		min-height: 50px;
+		height: 100%;
+		background: url(images/bx_loader.gif) center center no-repeat #fff;
+	}
+
+/* #PAGER
+   ========================================================================== */
+
+	.bx-wrapper .bx-pager {
+		color: #fff;
+		text-align: center;
+	}
+	
+	.bx-wrapper .bx-pager .bx-pager-item,
+	.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+		display: inline-block;
+	}
+	
+	.bx-wrapper .bx-pager.bx-default-pager a {
+		display: block;
+		width: 10px;
+		height: 10px;
+		-webkit-border-radius: 5px;
+		   -moz-border-radius: 5px;
+				border-radius: 5px;
+		outline: 0;
+		margin: 0 5px;
+		background: #fff;
+		text-indent: -9999px;
+	}
+	
+	.bx-wrapper .bx-pager.bx-default-pager a:hover,
+	.bx-wrapper .bx-pager.bx-default-pager a.active {
+		background: #f11d1d;
+	}
+
+/* #DIRECTION CONTROLS (NEXT / PREV
+   ========================================================================== */
+
+	.bx-wrapper .bx-prev {
+		left:50%;
+		margin-left: 60px;
+		background: url(images/bg_direction_nav.png) no-repeat center left;
+	}
+	
+	.bx-wrapper .bx-next {
+		left: 50%;
+		margin-left: 87px;
+		background: url(images/bg_direction_nav.png) no-repeat center right;
+	}
+	
+	.bx-wrapper .bx-prev:hover {
+		opacity: 1;
+	}
+	
+	.bx-wrapper .bx-next:hover {
+		opacity: 1;
+	}
+	
+	.bx-wrapper .bx-controls-direction a {
+		position: absolute;
+		z-index: 9999;
+		bottom: 10px;
+		width: 30px;
+		height: 30px;
+		outline: 0;
+		margin-top: -16px;
+		text-indent: -9999px;
+		opacity: 0.9;
+	}
+	
+	.bx-wrapper .bx-controls-direction a.disabled {
+		display: none;
+	}
+
+/* #AUTO CONTROLS (START / STOP)
+   ========================================================================== */
+
+	.bx-wrapper .bx-controls-auto {
+		text-align: center;
+	}
+	
+	.bx-wrapper .bx-controls-auto .bx-start {
+		display: block;
+		width: 10px;
+		height: 11px;
+		outline: 0;
+		margin: 0 3px;
+		text-indent: -9999px;
+		background: url(images/controls.png) -86px -11px no-repeat;
+	}
+	
+	.bx-wrapper .bx-controls-auto .bx-start:hover,
+	.bx-wrapper .bx-controls-auto .bx-start.active {
+		background-position: -86px 0;
+	}
+	
+	.bx-wrapper .bx-controls-auto .bx-stop {
+		display: block;
+		width: 9px;
+		height: 11px;
+		outline: 0;
+		margin: 0 3px;
+		text-indent: -9999px;
+		background: url(images/controls.png) -86px -44px no-repeat;
+	}
+	
+	.bx-wrapper .bx-controls-auto .bx-stop:hover,
+	.bx-wrapper .bx-controls-auto .bx-stop.active {
+		background-position: -86px -33px;
+	}
+
+/* #PAGER WITH AUTO-CONTROLS HYBRID LAYOUT
+   ========================================================================== */
+
+	.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+		width: 80%;
+		text-align: left;	
+	}
+	
+	.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+		right: 0;
+		width: 35px;
+	}
+
+/* #IMAGE CAPTIONS
+   ========================================================================== */
+
+	.bx-wrapper .bx-caption {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background: rgba(80, 80, 80, 0.75);
+	}
+	
+	.bx-wrapper .bx-caption span {
+		display: block;
+		padding: 10px;
+		color: #fff;
+		font-family: Arial;
+		font-size: 13px;
+	}
+
+/* #CUSTOM
+   ========================================================================== */
+
+	#main-slider,
+	#case-study-slider { 
+		position: relative;
+		margin-bottom: 60px;  
+	}
+	
+	#main-slider .slides li { 
+		position: relative;
+		height: 700px; 
+	}
+
+	#main-slider .slidetext { 
+		position:absolute;
+		left:50%; 
+		bottom: 90px; 
+		width: 450px; 
+		margin-left:-470px;  
+	}
+	
+	#case-study-slider .slidetext { 
+		position:absolute; 
+		bottom:0; 
+		left:50%;
+		width: 370px; 
+		margin-left:20px;
+		padding: 40px; 
+		padding-bottom: 60px; 
+		color: #5d5d5d !important; 
+		background-color: #fff;  
+	}
+	
+	#main-slider .slidetext h1,
+	#main-slider .slidetext h2, 
+	#main-slider .slidetext h3,
+	#main-slider .slidetext h4,
+	#main-slider .slidetext h5,
+	#main-slider .slidetext h6 {
+		color: #fff;
+	}
+	
+	#main-slider .slidetext a, 
+	#main-slider .slidetext h2 a, 
+	#main-slider .slidetext h3 a {
+		color: #fff;
+		text-decoration: none;
+	}
+	
+	#main-slider .slidetext a.btn-white { 
+		color: #fff; 
+		background-color: transparent; 
+	}
+	
+	#main-slider .slidetext .btn-white:hover { 
+		background-color: rgba(255, 255, 255, 0.5); 
+	}
+	
+	#case-study-slider .slides li { 
+		position:relative;
+		height: 475px;  
+	}
+	
+	#case-study-slider .slidetext {}
+	
+	#case-study-slider .slidetext h1,
+	#case-study-slider .slidetext h2,
+	#case-study-slider .slidetext h3 { color: #333; }
+	
+	#case-study-slider .slidetext a.btn-white { margin-bottom:0; }
+	
+	@media (min-width: 768px) and (max-width: 979px) {
+	
+		#case-study-slider .slidetext { margin-left: -225px; }
+		
+		#main-slider .slidetext { margin-left:-350px; }
+	
+	}
+	
+	@media (max-width: 767px) {
+	
+		#main-slider .slidetext { 
+			width: 280px; 
+			left: 50%; 
+			margin-left: -140px; 
+			text-align:center; 
+		}
+		
+		#case-study-slider .slidetext { 
+			width:100px; 
+			margin-left: -90px;  
+		}
+		
+		#case-study-slider .slidetext p { display: none; }
+		
+		.bx-wrapper .bx-prev { margin-left: -30px; }
+		
+		.bx-wrapper .bx-next { margin-left: 0px; }
+		
+	}
+	
+	@media (min-width: 480px) and (max-width: 767px) {
+		
+		#main-slider .slidetext { 
+			width: 380px; 
+			margin-left: -190px; 
+		}
+		
+		#case-study-slider .slidetext { 
+			width:220px; 
+			margin-left: -150px;  
+		}
+		
+		#case-study-slider .slidetext p { display: block; }	
+	}
+	
